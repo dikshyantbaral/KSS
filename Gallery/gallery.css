@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:ital,wght@0,300;0,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    color: fuchsia;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    padding: 1rem;
+    display: grid;
+    grid-template-areas: "a1 a2 a3 a4"
+        "b1 b2 b3 b4"
+        "c1 c2 c3 c4"
+        "d1 d2 d3 d4"
+        "e1 e2 e3 e4";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
+}
+
+.responsive {
+    padding: 6px 6px;
+    width: 100%;
+}
+
+div.gallery {
+    border: 2px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 2px solid maroon;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    height: 18rem;
+
+}
+
+div.gallery img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* @media only screen and (max-width: 700px){
+    .responsive{
+        width:49.99999%;
+        margin:6px 0px;
+    }
+    .container{
+
+    }
+} */
+@media only screen and (max-width: 622px) {
+    .responsive {
+        width: 100%;
+        margin: 6px 0px;
+    }
+
+    .container {
+        display: block;
+    }
+}
